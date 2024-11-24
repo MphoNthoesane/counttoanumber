@@ -17,12 +17,17 @@ document.getElementById("done").onclick =  function(){
     button.innerHTML = 1
     document.getElementById("next").onclick =  function(){
         count++
-        
+        if(count>1){
+            button.style.backgroundColor = "#f2c718"
+            button.style.transform = 'scale(1.5)'
+        }
         
         setTimeout(nako,3000)
         function nako(){
             button.innerHTML = count
             button.style.backgroundColor = "#27f24c"
+            button.style.transform = 'scale(1)'
+
         }
         if(count>number){
             all.innerHTML = "Done"
@@ -31,3 +36,4 @@ document.getElementById("done").onclick =  function(){
     }
         
 }
+
