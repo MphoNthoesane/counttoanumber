@@ -22,7 +22,7 @@ document.getElementById("done").onclick =  function(){
             button.style.transform = 'scale(1.5)'
         }
         
-        setTimeout(nako,3000)
+        setTimeout(nako,500)
         function nako(){
             button.innerHTML = count
             button.style.backgroundColor = "#27f24c"
