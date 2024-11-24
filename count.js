@@ -30,6 +30,7 @@ document.getElementById("done").onclick =  function(){
 
         }
         if(count>number){
+            all.style.fontSize = "300px"
             all.innerHTML = "Done"
         }
     
